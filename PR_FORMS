@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #2f4f6f, #7da8c7);
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        .form-section {
+            padding: 40px;
+            width: 350px;
+        }
+        .form-section h2 {
+            margin-bottom: 20px;
+        }
+        .form-section input, 
+        .form-section select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-section button {
+            width: 100%;
+            padding: 10px;
+            background: #2f4f6f;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-section button:hover {
+            background: #1c2e45;
+        }
+        .form-section p {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .form-section p a {
+            color: #2f4f6f;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2>Let's get you started</h2>
+            <form action="#">
+                <input type="text" placeholder="Full name" required>
+                <input type="email" placeholder="Email address" required>
+                <input type="tel" placeholder="Phone number" required>
+                <input type="password" placeholder="Create password" required>
+                <select required>
+                    <option value="" disabled selected>Location (optional)</option>
+                    <option value="london">London</option>
+                    <option value="new-york">New York</option>
+                    <option value="sydney">Sydney</option>
+                </select>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already a user? <a href="#">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>
